@@ -15,5 +15,6 @@
                          pfp           TEXT,
                          journal       JSON          NOT NULL,
                          appointments  JSON,
-                         lab_results   JSON
+                         lab_results   JSON,
+                         dr_perms      JSON           NOT NULL DEFAULT '[]'::json
 );

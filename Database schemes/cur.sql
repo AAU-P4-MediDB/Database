@@ -10,5 +10,5 @@ CREATE TABLE CUR (
                         pfp       TEXT,
                         clinic    UUID           REFERENCES CCR(uuid) ON DELETE SET NULL,
                         phone     INTEGER        NOT NULL CHECK (phone >= 0 AND phone <= 99999999),
-                        timeline  JSON           NOT NULL DEFAULT '[]';
+                        timeline  JSON           NOT NULL DEFAULT '{}';
 );
